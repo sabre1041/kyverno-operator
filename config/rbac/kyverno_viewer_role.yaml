@@ -1,0 +1,20 @@
+# permissions for end users to view kyvernoes.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: kyverno-viewer-role
+rules:
+- apiGroups:
+  - operator.kyverno.io
+  resources:
+  - kyvernoes
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - operator.kyverno.io
+  resources:
+  - kyvernoes/status
+  verbs:
+  - get

@@ -1,0 +1,13 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: kyverno-operator
+  namespace: openshift-marketplace
+spec:
+  displayName: Kyverno Operator
+  publisher: Kyverno Community
+  sourceType: grpc
+  image: quay.io/ablock/kyverno-operator-index:latest
+  updateStrategy:
+    registryPoll:
+      interval: 45m

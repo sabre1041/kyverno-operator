@@ -1,0 +1,24 @@
+# permissions for end users to edit kyvernoes.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: kyverno-editor-role
+rules:
+- apiGroups:
+  - operator.kyverno.io
+  resources:
+  - kyvernoes
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - operator.kyverno.io
+  resources:
+  - kyvernoes/status
+  verbs:
+  - get

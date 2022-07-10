@@ -1,0 +1,6 @@
+apiVersion: operator.kyverno.io/v1alpha1
+kind: Kyverno
+metadata:
+  name: kyverno-openshift
+spec:
+  securityContext: null

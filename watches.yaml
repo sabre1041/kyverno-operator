@@ -1,0 +1,6 @@
+# Use the 'create api' subcommand to add watches to this file.
+- group: operator.kyverno.io
+  version: v1alpha1
+  kind: Kyverno
+  chart: helm-charts/kyverno
+#+kubebuilder:scaffold:watch
