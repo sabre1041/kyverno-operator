@@ -1,6 +1,6 @@
 # Kyverno Operator
 
-Operator to deploy the [Kyvero](https://kyverno.io) policy management framework for Kubernetes
+Operator to deploy the [Kyverno](https://kyverno.io) policy management framework for Kubernetes
 
 ## Installation
 
