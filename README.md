@@ -66,19 +66,25 @@ export BUNDLE_IMG=<registry>/<repository>:<tag>
 export CATALOG_IMG=<registry>/<repository>:<tag>
 ```
 
-1. Build the bundle image
+1. Create the bundle
+
+```shell
+make bundle
+```
+
+2. Build the bundle image
 
 ```shell
 make bundle-build
 ```
 
-2. Push the bundle image
+3. Push the bundle image
 
 ```shell
 make bundle-push
 ```
 
-3. Build the index image
+4. Build the index image
 
 ```shell
 make catalog-build
